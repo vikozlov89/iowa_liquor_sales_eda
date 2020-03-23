@@ -140,7 +140,7 @@ All invoice_and_item_number_values field values consist of three parts:
 
 Invoice letter (S or I), invoice number (6 digits), item number (5 digits):
 
-*S* *037317* *00008*
+*S*  *037317*  *00008*
 
 So to get random invoices we just will separate the invoice number by taking 7 chars from the left.
 There are 290 rows of 18 millions with invoice numbers filled incorrectly with incorrect length and witout the first letter.
