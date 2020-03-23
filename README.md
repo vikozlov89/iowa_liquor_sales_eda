@@ -43,7 +43,7 @@ The dataset has 24 fields:
 
 ## Initial Data Exploration
 
-Basic stats by variables achieved by [this query!] (./scripts/sql/query_basic_columns_stats.sql) allows to state the following:
+Basic stats by variables achieved by [this query!] (https://github.com/vikozlov89/iowa_liquor_sales_eda/blob/master/scripts/sql/query_basic_columns_stats.sql)) allows to state the following:
 
 * there is no problems with the key field, no duplicates or nulls (the deeper look shows that there is a small set (6 values: '3068313', '3789000', '3818000', '3818001', '4295S05', '4697000') of incorrectly filled keys)
 * there are null values in such fields as city, address, zip code, county
@@ -145,11 +145,11 @@ Invoice letter (S or I), invoice number (6 digits), item number (5 digits):
 So to get random invoices we just will separate the invoice number by taking 7 chars from the left.
 There are 290 rows of 18 millions with invoice numbers filled incorrectly with incorrect length and witout the first letter.
 
-After having the invoice number field we can draw a random sample of 20% of invoices (script and some analysis [here!](./notebooks/Random Sample Creation.ipynb))
+After having the invoice number field we can draw a random sample of 20% of invoices (script and some analysis [here!](https://github.com/vikozlov89/iowa_liquor_sales_eda/blob/master/notebooks/Random Sample Creation.ipynb))
 
 We should take into account that after the 26.08.2016 only some rare invoices are present and data after this date must be treated as incorrect.
 
-![Unique Invoices Per Day](./img/unique_invoices_per_day.png)
+![Unique Invoices Per Day](https://github.com/vikozlov89/iowa_liquor_sales_eda/blob/master/img/unique_invoices_per_day.png)
 
 Some basic analysis you may find here (unfortunately, I have lack of time and can't finish the job properly, but I thing you may find my skills useful after taking a look at this [notebook!](notebooks/Basic Analysis.ipynb)).
 
