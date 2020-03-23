@@ -145,7 +145,7 @@ Invoice letter (S or I), invoice number (6 digits), item number (5 digits):
 So to get random invoices we just will separate the invoice number by taking 7 chars from the left.
 There are 290 rows of 18 millions with invoice numbers filled incorrectly with incorrect length and witout the first letter.
 
-After having the invoice number field we can draw a random sample of 20% of invoices (script and some analysis [here](https://github.com/vikozlov89/iowa_liquor_sales_eda/blob/master/notebooks/Random Sample Creation.ipynb))
+After having the invoice number field we can draw a random sample of 20% of invoices (script and some analysis [here]("https://github.com/vikozlov89/iowa_liquor_sales_eda/blob/master/notebooks/Random Sample Creation.ipynb"))
 
 We should take into account that after the 26.08.2016 only some rare invoices are present and data after this date must be treated as incorrect.
 
